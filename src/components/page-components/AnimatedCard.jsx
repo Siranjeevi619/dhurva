@@ -35,26 +35,13 @@ const AnimatedCard = ({ passDetails }) => {
             ))}
           </ul>
           <div className="flex justify-center  mb-2">
-            <Button
-              className="mt-5 text-white hover:text-black px-6 py-2 font-medium rounded-full hover:scale-105 transition-all flex items-center gap-2"
-              style={{
-                backgroundColor: passDetails.color,
-                hover: { backgroundColor: passDetails.color },
-              }}
-            >
+            <Button className="bg-orange-500 mt-5 text-white hover:text-black px-6 py-2 font-medium rounded-full hover:bg-orange-600 hover:scale-105 transition-all flex items-center gap-2">
               Visit <RocketIcon size={18} />
             </Button>
           </div>
         </div>
 
-        <div
-          className="blob absolute -top-10 -left-10 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 z-0"
-          style={{
-            backgroundColor: passDetails.color,
-            boxShadow: `0 0 40px 20px ${passDetails.color}`,
-            filter: `blur(12px) drop-shadow(0 0 20px ${passDetails.color})`,
-          }}
-        ></div>
+        <div className="blob absolute -top-10 -left-10 w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 z-0"></div>
       </div>
     </motion.div>
   );
