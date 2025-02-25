@@ -44,7 +44,7 @@ const passes = [
   {
     id: 4,
     title: "Cultural Pass",
-    colorCode:"",
+    colorCode: "",
     price: 200,
     benefits: [
       "Day 2 on 16/03/2024",
