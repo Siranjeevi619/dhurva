@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/page-components/Navbar";
@@ -102,4 +101,3 @@ const PassPage = () => {
 };
 
 export default PassPage;
-
