@@ -26,7 +26,6 @@
   outline: 2px solid white;
 }
 
-/* Glowing and Moving Blob */
 .blob {
   position: absolute;
   z-index: 1;
@@ -44,7 +43,6 @@
     blob-glow 2s infinite alternate ease-in-out;
 }
 
-/* Smooth Glowing Effect */
 @keyframes blob-glow {
   0% {
     box-shadow: 0 0 20px 10px var(--blob-color);
@@ -54,7 +52,7 @@
   }
 }
 
-/* Fluid Blob Movement */
+
 @keyframes blob-bounce {
   0% {
     transform: translate(-50%, -50%) translate3d(0, 0, 0);
