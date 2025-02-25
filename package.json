@@ -19,6 +19,7 @@
     "@radix-ui/react-navigation-menu": "^1.2.5",
     "@radix-ui/react-separator": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.2",
+    "@sl-codeblaster/react-3d-animated-card": "^1.0.8",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.16",
