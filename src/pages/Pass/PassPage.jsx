@@ -9,7 +9,7 @@ const passes = [
   {
     id: 1,
     title: "Standard Pass",
-    colorCode: "#1D8ECD",
+    color: "#1D8ECD",
     price: 200,
     benefits: [
       "Day 1 on 15/03/2024",
@@ -22,7 +22,7 @@ const passes = [
     id: 2,
     title: "Elite Pass",
     price: 300,
-    colorCode: "#E5272C",
+    color: "#E5272C",
     benefits: [
       "Day 1 on 15/03/2024",
       "One Workshop / Hackathon / Ideathon",
@@ -33,7 +33,7 @@ const passes = [
   {
     id: 3,
     title: "Pro Pass",
-    colorCode: "#1FAB4A",
+    color: "#1FAB4A",
     price: 400,
     benefits: [
       "Unlimited Technical Events + One Workshop / Hackathon / Ideathon",
@@ -44,7 +44,7 @@ const passes = [
   {
     id: 4,
     title: "Cultural Pass",
-    colorCode:"",
+    color: "#FFA500",
     price: 200,
     benefits: [
       "Day 2 on 16/03/2024",
@@ -57,6 +57,7 @@ const passes = [
     id: 5,
     title: "Pro Plus Pass",
     price: 500,
+    color: "#8B00F7",
     benefits: [
       "For Day 1(15/03/2024) & Day 2(16/03/2024)",
       "Unlimited Technical Events + One Workshop / Hackathon / Ideathon + Unlimited Cultural Events",
