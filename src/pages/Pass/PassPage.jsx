@@ -1,6 +1,10 @@
+
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-
+import Navbar from "@/components/page-components/Navbar";
+import PassCard from "@/components/page-components/PassCard";
+import FooterSection from "@/components/sections/footer/FooterSection";
+import RegistrationPage from "../Registration/RegistrationPage";
 import "../../assets/fonts/powergrotesk.css";
 import "../../assets/fonts/dmsans.css";
 import AnimatedCard from "@/components/page-components/AnimatedCard";
@@ -9,7 +13,6 @@ const passes = [
   {
     id: 1,
     title: "Standard Pass",
-    color: "#1D8ECD",
     price: 200,
     benefits: [
       "Day 1 on 15/03/2024",
@@ -22,7 +25,6 @@ const passes = [
     id: 2,
     title: "Elite Pass",
     price: 300,
-    color: "#E5272C",
     benefits: [
       "Day 1 on 15/03/2024",
       "One Workshop / Hackathon / Ideathon",
@@ -33,18 +35,18 @@ const passes = [
   {
     id: 3,
     title: "Pro Pass",
-    color: "#1FAB4A",
     price: 400,
     benefits: [
       "Unlimited Technical Events + One Workshop / Hackathon / Ideathon",
       "Get Certificates",
+      "Live Video",
+      "Event Photos (via Google Drive)",
     ],
     date: "15/03/2024",
   },
   {
     id: 4,
     title: "Cultural Pass",
-    color: "#FFA500",
     price: 200,
     benefits: [
       "Day 2 on 16/03/2024",
@@ -57,11 +59,13 @@ const passes = [
     id: 5,
     title: "Pro Plus Pass",
     price: 500,
-    color: "#8B00F7",
     benefits: [
       "For Day 1(15/03/2024) & Day 2(16/03/2024)",
       "Unlimited Technical Events + One Workshop / Hackathon / Ideathon + Unlimited Cultural Events",
       "Get Certificates",
+      "Meet Resource Person",
+      "Live Video",
+      "Event Photos (via Google Drive)",
     ],
     date: "15/03/2024 & 16/03/2024",
   },
@@ -87,13 +91,9 @@ const PassPage = () => {
       </motion.div>
 
       <div className="flex flex-col items-center mt-2 px-6 mb-6">
-        <div className="flex flex-wrap justify-center gap-10 mt-20 ms-3 sm:ms-0 relative z-10">
+        <div className="flex-wrap mt-20 px-6 relative z-10">
           {passes.map((pass) => (
-            <AnimatedCard
-              key={pass.id}
-              passDetails={pass}
-              className="w-full sm:w-1/2 md:w-1/3 lg:w-1/3"
-            />
+            <AnimatedCard key={pass.id} passDetails={pass} />
           ))}
         </div>
       </div>
@@ -102,3 +102,4 @@ const PassPage = () => {
 };
 
 export default PassPage;
+
